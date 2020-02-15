@@ -9,8 +9,8 @@ ifdef GH_OAUTH_CLIENT_SECRET
 	LDFLAGS := -X github.com/cli/cli/context.oauthClientSecret=$(GH_OAUTH_CLIENT_SECRET) $(LDFLAGS)
 endif
 
-bin/ghnapster: $(BUILD_FILES)
-	@go build -ldflags "$(LDFLAGS)" -o "$@" ./cmd/ghnapster
+bin/gh: $(BUILD_FILES)
+	@go build -ldflags "$(LDFLAGS)" -o "$@" ./cmd/gh
 
 test:
 	go test ./...
