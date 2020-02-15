@@ -57,11 +57,10 @@ func (fe FlagError) Unwrap() error {
 var RootCmd = &cobra.Command{
 	Use:   "gh",
 	Short: "GitHub CLI",
-	Long: `************ LOS TOROS DEL NORTE NO SON EQUIPO DE PRIMERA**************
+	Long: `Work seamlessly with GitHub from the command line.
 
-
-La CLI de GitHub se encuentra en las primeras etapas de desarrollo, y nos encantaría escuchar su
-comentarios en <https://forms.gle/umxd3h31c7aMQFKG7>`,
+GitHub CLI is in early stages of development, and we'd love to hear your
+feedback at <https://forms.gle/umxd3h31c7aMQFKG7>`,
 
 	SilenceErrors: true,
 	SilenceUsage:  true,
